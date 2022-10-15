@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/jpg" href="assets/img/logo.jpg">
+    <title>Store D'Luck</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="logo">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-mobile">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="title">
+                    <h1>STORE D'LUCK</h1>
+                    <h3>Loja de roupas masculinas e femininas</h2>
+                </div>
+
+                <div class="icon-fixed">
+                    <a href="https://wa.me/5514991332589" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </div>
+        </section>
+    
+        <section id="about">
+            <div class="container">
+                <div class="title">
+                    <h1> SOBRE NÓS </h1><br></br>
+                    <p> A Store D'Luck é uma loja de roupas masculinas e femininas, onde oferecemos o que há de mais moderno e atual em todas categorias de nossos produtos. Nossa preocupação é oferecer os melhores produtos com os melhores preços. <br> Fazemos entrega para todo o Brasil. &#x1F1E7&#x1F1F7 </p>
+                </div>
+                <div class="img-about">
+                    <img src="assets/img/loja.png" alt="loja">
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog">
+            <div class="container">
+                <div class="categorias">      
+                    <h1>CATEGORIAS</h1>
+                    <div class="imagem"><a href="assets/catalog/calcados_fem.html"><img src="assets/img/TÊNIS FEMININO 34 A 39/LINHA PREMIUM 🇧🇷/ADIDAS/ADIDAS 4D 💰 200,00/PHOTO-2022-03-30-16-14-14(6).jpg"><p>Calçados Femininos<br>34 a 39</p></a></div>
+                    <div class="imagem"><a href="assets/catalog/calcados_masc.html"><img src="assets/img/TÊNIS MASCULINO 38 A 43/1° LINHA/ADIDAS/ADIDAS RUN FALCON 💰 230,00/6.jpg"><p>Calçados Masculinos <br> 38 a 43</p></a></div>
+                    <div class="imagem"><a href="assets/catalog/calcados_infantil.html"><img src="assets/img/TÊNIS INFÂNTIL 26 A 33/ADIDAS 💰 180,00/08f4deb7-859c-4569-9ae1-e2e0336b74f2.jpg"><p>Infantil <br> 26 a 33</p></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.964983756769!2d-49.8704453852312!3d-22.988315084970438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c0183c502d2553%3A0x7b5e476d65b68446!2sR.%20Paran%C3%A1%20-%20Jardim%20Matilde%2C%20Ourinhos%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1662851052519!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-form">
+                    <h1>CONTATE-NOS</h1>
+                    <form action="https://formsubmit.co/storedluck@gmail.com" method="POST">
+                        <input type="text" placeholder="Nome" name="Nome" class="contact-txt" required>
+                        <input type="email" placeholder="E-mail" name="E-mail" class="contact-txt" required>
+                        <textarea placeholder="Assunto" name="Assunto" class="contact-txtarea" required></textarea>
+                        <input type="hidden" name="_next" value="https://storedluck.netlify.app/">
+                        <input type="submit" class="contact-btn" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="linha"></div>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/store_dluck/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a> 
+                <a href="https://wa.me/5514981667579" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a href="mailto:storedluck@gmail.com"><ion-icon name="mail"></ion-icon> </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© 2022 Store D'Luck</span>
+        <span>Desenvolvido por Thais Garcia</span>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
